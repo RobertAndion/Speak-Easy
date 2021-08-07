@@ -1,12 +1,6 @@
 
 .left-sidebar {
   display: inline-block;
-  border-left: 0%;
-  border-right: 1%;
-  border-top: 0vh;
-  border-bottom: 0vh;
-  border-style: solid;
-  border-color: black;
   background-color: #929292;
   max-width: 15%;
   min-width: 15%;
@@ -41,6 +35,7 @@
   border-style: solid;
   height: 4%;
   min-height:4%;
+  margin-top: 0.5%;
   margin-left: 2%;
   max-width: 94%;
   min-width: 94%;
@@ -52,20 +47,29 @@
 
 .chat-window {
   display: inline-block;
-  background-color: #929292;
+  outline: 1px solid black;
   vertical-align: top;
-  max-width: 84%; 
-  min-width: 84%;
+  max-width: 85%; 
+  min-width: 85%;
   height: 97vh;
   min-height: 97vh;
+}
+
+.chat-window > #chat-window-header {
+  display: block;
+  text-align: center;
+  background-color: #646464;
+  color: #BEBEBE;
+  max-height: 4%;
+  min-height: 4%;
+  width: 100%;
 }
 
 .chat-window > #chat-window-body {
   /* display: flex;
   flex-direction: column-reverse; */
-  display: inline-block;
-  position: below;
-  height: 80%;
+  display: block;
+  max-height: 80%;
   min-height: 80%;
   width: 100%;
   background-color: #929292;
@@ -82,25 +86,19 @@
   position: relative;
   height: 4%;
   min-height:4%;
-  margin-left: 2%;
+  margin-top: 0.5%;
+  margin-left: 2.5%;
   width: 94%;
   background-color: #929292;;
   color: #BEBEBE;
   justify-content: center;
 }
+
 .chat-window > #chat-window-input {
   display: block;
+  outline: 1px solid black;
   background-color: #646464;
   max-height: 16%;
   min-height: 16%;
-  width: 100%;
-}
-.chat-window > #chat-window-header {
-  display: block;
-  text-align: center;
-  background-color: #646464;
-  color: #BEBEBE;
-  max-height: 4%;
-  min-height: 4%;
   width: 100%;
 }
