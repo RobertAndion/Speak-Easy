@@ -1,12 +1,15 @@
 import './App.css';
+import ChatWindow from './components/ChatWindow';
+import LeftSidebar from './components/LeftSidebar.js';
 
 function MainDisplay() {
   return (
-    <div className="Application-Container">
-      <header className="App-header">
-Start of app
-      </header>
+    <div className="application-container">
+      <div className='application-title'> Speak Easy </div>
+      <LeftSidebar />
+      <ChatWindow />
     </div>
+
   );
 }
 
